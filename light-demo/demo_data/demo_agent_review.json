@@ -1,0 +1,60 @@
+﻿{
+  "demo_file": "demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf",
+  "summary": {
+    "record_count": 5,
+    "file_indicated_total_cny": 1990.20,
+    "detected_invoice_total_usd": 7.99,
+    "currency": "CNY / USD",
+    "status": "Needs human review"
+  },
+  "quick_review": [
+    {
+      "label": "Invoice materials detected",
+      "status": "detected",
+      "detail": "Invoice-like records were extracted from the cached review data."
+    },
+    {
+      "label": "Payment proof missing",
+      "status": "risk",
+      "detail": "The online review marks payment proof as missing or insufficient."
+    },
+    {
+      "label": "Cross-currency review needed",
+      "status": "risk",
+      "detail": "The file indicates CNY 1,990.20 but extracted invoice records include USD."
+    },
+    {
+      "label": "Review items detected",
+      "status": "detected",
+      "detail": "The case includes amount, currency, document type, and risk notes."
+    }
+  ],
+  "risk_flags": [
+    {
+      "code": "PAYMENT_PROOF_INSUFFICIENT",
+      "message": "Payment proof is missing or insufficient for the reimbursement case."
+    },
+    {
+      "code": "CROSS_CURRENCY_REVIEW_REQUIRED",
+      "message": "The file name indicates 1,990.20 CNY, while extracted invoice records include USD invoice lines."
+    },
+    {
+      "code": "HUMAN_REVIEW_RECOMMENDED",
+      "message": "The case should be reviewed or rechecked before approval."
+    }
+  ],
+  "agent_review": [
+    {
+      "agent": "Document Intake Agent",
+      "message": "The uploaded file is treated as demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf. The file name indicates a total of 1,990.20 CNY. Cached OCR-style data converts the reimbursement evidence into structured records, including invoice lines and a bank-statement-style total."
+    },
+    {
+      "agent": "Policy Specialist Agent",
+      "message": "The case contains invoice materials, but payment proof is missing or insufficient. Because some extracted invoice records are in USD while the file-indicated total is CNY, the case requires cross-currency review and cannot be approved from the filename alone."
+    },
+    {
+      "agent": "Audit Reviewer Agent",
+      "message": "The audit recommendation is human review or one recheck. The case should not be blindly approved until payment evidence and cross-currency consistency are confirmed."
+    }
+  ]
+}
