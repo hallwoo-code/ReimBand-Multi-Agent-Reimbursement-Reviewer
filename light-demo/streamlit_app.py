@@ -136,7 +136,7 @@ def load_records() -> pd.DataFrame:
 
 
 def load_review() -> dict:
-    with REVIEW_PATH.open("r", encoding="utf-8") as f:
+    with REVIEW_PATH.open("r", encoding="utf-8-sig") as f:
         return json.load(f)
 
 
