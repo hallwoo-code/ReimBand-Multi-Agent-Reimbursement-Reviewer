@@ -1,0 +1,6 @@
+﻿record_id,source_file,document_type,invoice_no,invoice_date,amount,currency,payment_proof,counterparty,risk_note
+1,demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf,invoice,UPWORK-INV-001,2026-03-30,7.99,USD,missing,UPWORK,USD invoice line requires cross-currency review
+2,demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf,invoice,UPWORK-INV-002,2026-03-30,5.50,CNY,missing,UPWORK,Payment proof missing or insufficient
+3,demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf,invoice,UPWORK-INV-003,2026-03-31,98.82,CNY,missing,UPWORK,Payment proof missing or insufficient
+4,demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf,invoice,UPWORK-INV-004,2026-03-31,41.48,CNY,missing,UPWORK,Payment proof missing or insufficient
+5,demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf,bank_statement,,,,1990.20,CNY,insufficient,PAYPAL_UPWORK,File name and bank statement indicate CNY total but invoice evidence includes USD lines
