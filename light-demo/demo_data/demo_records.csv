@@ -1,6 +1,11 @@
-﻿record_id,source_file,document_type,invoice_no,invoice_date,amount,currency,payment_proof,counterparty,risk_note
-1,demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf,invoice,UPWORK-INV-001,2026-03-30,7.99,USD,missing,UPWORK,USD invoice line requires cross-currency review
-2,demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf,invoice,UPWORK-INV-002,2026-03-30,5.50,CNY,missing,UPWORK,Payment proof missing or insufficient
-3,demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf,invoice,UPWORK-INV-003,2026-03-31,98.82,CNY,missing,UPWORK,Payment proof missing or insufficient
-4,demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf,invoice,UPWORK-INV-004,2026-03-31,41.48,CNY,missing,UPWORK,Payment proof missing or insufficient
-5,demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf,bank_statement,,,,1990.20,CNY,insufficient,PAYPAL_UPWORK,File name and bank statement indicate CNY total but invoice evidence includes USD lines
+Select,File_Page,Category,Invoice_No,Date,Amount,Currency,Seller_Counterparty,Risk_Notes
+true,demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf Page 2/74,Invoice,T906208299,2026-03-30,5.50,USD,Upwork Global Inc.,No issues
+true,demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf Page 3/74,Invoice,T906208300,2026-03-30,0.28,USD,Upwork Global Inc.,No issues
+true,demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf Page 4/74,Invoice,T905127393,2026-03-30,5.50,USD,Upwork Global Inc.,No issues
+true,demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf Page 5/74,Invoice,T905127394,2026-03-30,0.28,USD,Upwork Global Inc.,No issues
+true,demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf Page 6/74,Invoice,T905127395,2026-03-30,7.99,USD,Upwork Global Inc.,No issues
+true,demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf Page 12/74,Invoice,T905127396,2026-03-30,12.00,USD,Upwork Global Inc.,Cross-currency review needed
+true,demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf Page 21/74,Invoice,T905127397,2026-03-31,18.00,USD,Upwork Global Inc.,Payment proof missing
+true,demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf Page 35/74,Invoice,T905127398,2026-03-31,27.72,USD,Upwork Global Inc.,Cross-currency review needed
+true,demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf Page 52/74,Invoice,T905127399,2026-03-31,99.00,USD,Upwork Global Inc.,Needs review
+true,demo_case_02_mar30_mar31_total_1990_20_minimal_redacted.pdf Page 74/74,Summary,FILE_TOTAL,2026-03-31,1990.20,CNY,Filename claim,Claimed total from file name requires payment proof verification
